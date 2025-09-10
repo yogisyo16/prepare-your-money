@@ -29,6 +29,9 @@ defineProps({
             :salary="salary"
         />
     </header>
+    <body>
+        
+    </body>
 </template>
 
 <style scoped>
