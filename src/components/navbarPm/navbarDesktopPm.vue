@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router';
 defineProps({
     name: { type: String, required: true },
     email: { type: String, required: true },
@@ -9,10 +10,10 @@ defineProps({
         type: String, 
         required: false 
     },
-    dashboard: { type: String, required: false },
-    transactions: { type: String, required: false },
-    reports: { type: String, required: false },
-    salary: { type: String, required: false },
+    dashboard: { type: String, required: false, default: '/' },
+    transactions: { type: String, required: false, default: '#' },
+    reports: { type: String, required: false, default: '#' },
+    salary: { type: String, required: false, default: '#' },
 })
 </script>
 
@@ -27,18 +28,34 @@ defineProps({
 
                 <!-- Navigation Links -->
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                    <a :href="dashboard" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                    <RouterLink 
+                        :to="dashboard"
+                        class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                        active-class="border-indigo-500 text-gray-900"
+                    >
                         Dashboard
-                    </a>
-                    <a :href="transactions" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                    </RouterLink>
+                    <RouterLink 
+                        :to="transactions"
+                        class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                        active-class="border-indigo-500 text-gray-900"
+                    >
                         Transactions
-                    </a>
-                    <a :href="reports" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                    </RouterLink>
+                    <RouterLink 
+                        :to="reports"
+                        class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                        active-class="border-indigo-500 text-gray-900"
+                    >
                         Reports
-                    </a>
-                    <a :href="salary" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                    </RouterLink>
+                    <RouterLink 
+                        :to="salary"
+                        class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                        active-class="border-indigo-500 text-gray-900"
+                    >
                         Salary
-                    </a>
+                    </RouterLink>
                 </div>
 
                 <!-- User Profile Section -->

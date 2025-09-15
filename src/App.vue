@@ -11,11 +11,13 @@ const profileUser = userData.getUserProfile();
         :emailPrepare="profileUser.email" 
         :rolePrepare="profileUser.role" 
         
-        dashboard="#"
-        transactions="#"
+        dashboard="/dashboard"
+        transactions="/transactions"
         reports="#"
         salary="#"
-    />
+    >
+        <router-view/>
+    </PrepareMoney>
 </template>
 
 <style scoped>
