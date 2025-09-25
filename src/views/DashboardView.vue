@@ -7,9 +7,7 @@ const profileUser = userData.getUserProfile();
 
 <template>
   <DashboardMoney 
-    :name="profileUser.name" 
-    :email="profileUser.email" 
-    :role="profileUser.role"
-    :image="profileUser.image"
+    :card-name="profileUser.name"
+    :card-number="22222222222222222"
   />
 </template>
