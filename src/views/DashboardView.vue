@@ -10,5 +10,6 @@ const profileUser = userData.getUserProfile();
     :name="profileUser.name" 
     :email="profileUser.email" 
     :role="profileUser.role"
+    :image="profileUser.image"
   />
 </template>

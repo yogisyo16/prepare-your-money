@@ -61,7 +61,7 @@ defineProps({
                 <!-- User Profile Section -->
                 <div class="flex items-center">
                     <div class="flex items-center">
-                        <img class="rounded-full mr-2" :src="image" alt="Avatar of user" />
+                        <img class="rounded-full mr-2 w-[30px] h-[50px]" :src="image" alt="Avatar of user" />
                         <div class="text-sm">
                             <p class="text-gray-700 font-medium">{{ name }}</p>
                             <p class="text-gray-500 text-xs">{{ role }}</p>

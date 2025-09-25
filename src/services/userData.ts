@@ -16,12 +16,14 @@
 //     }
 //     return config
 // })
+import charFace from '@/assets/char-face.jpg';
 
 interface UserData {
     id: number;
     name: string;
     email: string;
     role: string;
+    image?: string;
 }
 
 export const userData = {
@@ -31,7 +33,8 @@ export const userData = {
             id: 1,
             name: 'John Doe',
             email: 'john@example.com',
-            role: 'user'
+            role: 'user',
+            image: charFace
         }
     },
     

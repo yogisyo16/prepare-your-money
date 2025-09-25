@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import navbarDesktopPm from './navbarPm/navbarDesktopPm.vue'
+import navbarDesktopPm from './NavbarP/navbarDesktopPm.vue'
 
 defineProps({
     namePrepare: { type: String, required: true },
