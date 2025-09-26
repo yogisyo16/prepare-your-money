@@ -18,7 +18,7 @@ defineProps({
 </script>
 
 <template>
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-lg pt-2">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between h-16">
                 <!-- Logo Section -->

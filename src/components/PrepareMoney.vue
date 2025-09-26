@@ -30,7 +30,7 @@ defineProps({
         />
     </header>
     <body>
-        <div class="flex flex-col items-center justify-center h-screen">
+        <div class="container p-2 m-2 md:p-4 md:m-4">
             <slot />
         </div>
     </body>

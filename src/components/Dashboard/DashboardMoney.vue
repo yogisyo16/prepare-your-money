@@ -19,9 +19,11 @@
 </script>
 
 <template>
-    <section>
-        <div class="flex items-center">
-            <div class="flex items-center">
+    <div class="flex flex-col items-center md:items-start gap-2 md:gap-10">
+        <div class="flex flex-col md:flex-row gap-1 md:gap-4">
+            <div class="flex flex-col items-start">
+                <h1 class="text-2xl font-bold">Dashboard</h1>
+                <h1 class="text-2xl font-bold">Card</h1>
                 <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                     <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/src/assets/char-face.jpg" alt="">
                     <div class="flex flex-col justify-between p-4 leading-normal">
@@ -30,6 +32,15 @@
                     </div>
                 </a>
             </div>
+            <div class="flex flex-row items-center">
+                <h1 class="text-2xl font-bold">Income</h1>
+            </div>
+            <div class="flex flex-row items-center">
+                <h1 class="text-2xl font-bold">Expenses</h1>
+            </div>
         </div>
-    </section>
+        <div class="flex flex-row">
+            <h1 class="text-2xl font-bold">My Name</h1>
+        </div>
+    </div>
 </template>
